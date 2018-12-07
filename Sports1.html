@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html>
-<title>Sport & Fitness</title>
+      <title>Sports & Fitness</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!--Navbar-->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse">
+      <ul  class= "nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+          <li class="dropdown">
+             <a href="Activities" class="dropdown-toggle" data-toggle="dropdown">Activities<b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                <li><a href="artsfatu.html">Arts</a>
+                <li><a href="#">Coding</a>
+              </ul>
+        <li><a href="fatucontact.html">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+$("button").on("click", function() {
+  alert("Clicked!");
+});
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+
 <!--not needed<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<link rel="stylesheet" href="css/fatuactivities.css"><!--google font linked, I added this to get the grid
-pictures to all be the same size-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="css/fatuactivities.css">
+
 <style>
-body,h1,h2 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
+  body,h1,h2 {font-family: "Karma", sans-serif}
+  .w3-bar-block .w3-bar-item {padding:20px}
 </style>
+
 <body>
 
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-center w3-padding-16">Sport & Fitness</div>
+    <div class="w3-center w3-padding-16">Sports & Fitness</div>
   </div>
 </div>
 
@@ -51,12 +92,12 @@ body,h1,h2 {font-family: "Karma", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
-      <a href="http://thisgirlcanlambeth.co.uk/activities/" target="_blank"> <img src="./ZUMBA.jpg" alt="ThisGirlCan" style="width:100%"></a>
+      <a href="http://www.miguelsboxinggym.co.uk/training-options/womens-boxing-classes/" target="_blank"> <img src="./boxing.jpg" alt="ThisGirlCan" style="width:100%"></a>
       <h2>Women's Boxing Classes</h2>
       <p>There are a lot of women's boxing classes in London. Miguel's is based near Brixton Station, and has great reviews. There are beginner classes, classes for just working out, and classes for if you want to get competitive.</p>
     </div>
      <div class="w3-quarter">
-        <a href="http://www.miguelsboxinggym.co.uk/training-options/womens-boxing-classes/" target="_blank"> <img src="./boxing.jpg" alt="Boxing" style="width:100%"></a>
+        <a href="http://thisgirlcanlambeth.co.uk/activities/" target="_blank"> <img src="./ZUMBA.jpg" alt="Boxing" style="width:100%"></a>
       <h2>This Girl Can: Lambeth</h2>
       <p>If you're 16-25 and based near Lambeth, This Girl Can have an amazing range of sports opportunities. Zumba, Street Dance, Football, Cycling and Circuit Classes are just some of the activities on offer.</p>
     </div>
@@ -80,18 +121,7 @@ body,h1,h2 {font-family: "Karma", sans-serif}
         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Roller Derby</span>
       </p>
     </div>
-  </footer>
 
-<!--not needed<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>-->
-
+</script>
 </body>
 </html>
