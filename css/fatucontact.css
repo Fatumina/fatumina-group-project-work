@@ -1,5 +1,5 @@
 body{
-    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+     background: url('2560.jpg');
 }
 .contact-form{
     background: #fff;
@@ -51,3 +51,11 @@ body{
     border: none;
     cursor: pointer;
 }
+
+.contact-title{width: 50%;
+border: none;
+border-radius: 1rem;
+padding: 5%;
+font-weight: 600;
+color: #000000;
+cursor: pointer;}
