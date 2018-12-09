@@ -2,18 +2,12 @@
   margin: 0;
   padding: 0;
 }
-.navbar-brand img {
-  height: auto;
-  width: auto;
-  max-height: 72px;
-  max-width: 200px;
-}
 body {
   background-size: cover;
 }
 header {
   text-align: center;
-  background: url("25.jpg"); /*25.jpg*/
+  background: white;
   height: 100vh;
   background-size: cover;
   color: black;
@@ -36,4 +30,12 @@ article {
   max-width: 500px;
   padding: 20px;
   margin: 0 auto;
+}
+
+
+.navbar-brand img {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 200px;
 }
