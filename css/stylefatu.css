@@ -13,7 +13,7 @@ body {
 }
 header {
   text-align: center;
-  background: url("25.jpg"); /*25.jpg*/
+  background: #FF4136;
   height: 100vh;
   background-size: cover;
   color: black;
