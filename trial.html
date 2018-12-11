@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>GALSGUIDE</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meet The Team</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aboutus.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <!--Navbar-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/stylefatu.css">
+  </head>
+  <!--Navbar-->
+  <body d="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -26,15 +31,58 @@
               <a href="Activities" class="dropdown-toggle" data-toggle="dropdown">Activities<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="arts.html">Arts</a>
-                <li><a href="sports1.html">Sports</a>
                 <li><a href="codingclassess.html">Coding</a>
+                <li><a href="sports1.html">Sports</a>
               </ul>
+            </li>
             <li><a href="fatucontact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
     </nav>
+    <!--Title-->
+    <div class="jumbotron text-center">
+      <h1><img src="img/galsguidelogo.jpg" alt=""></h1>
+      <p>We help the women leaders of tomorrow</p>
+      <form>
+        <div class="input-group">
+          <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-danger">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>About Company Page</h2>
+          <br>
+          <h3>Gals Guide was funded by powerful and inspirational women who want to actively help other women to succeed in areas where their talent is not nurtured.</h3>
+          <br>
+          <p>Gals Guide is a community of passionate women who want to change the face of music and arts, tech and sports. We are here to provide support to the women of tomorrow and take action through community meetings, events and shared experiences. We are here to stand for the women whose voices are silenced.</p>
+        </div>
+        <!-- Not needed  <div class="col-sm-4">
+          <span class="glyphicon glyphicon-signal logo"></span>
+          </div>-->
+      </div>
+    </div>
+    <div class="container-fluid bg-grey">
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-globe logo slideanim"></span>
+        </div>
+        <div class="col-sm-8">
+          <h2>Our Values</h2>
+          <br>
+          <h3><strong>MISSION:</strong> We are here to support women who want to become change makers of the future</h3>
+          <br>
+          <p><strong>VISION:</strong> We aim to be an inclusive platform pushing the concept of diversity forward regardless of  age, ethnicity, gender, religion, ability, experience, class, size, and more.</p>
+        </div>
+      </div>
+    </div>
     <!-- Code for team using Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <section class="team">
@@ -119,6 +167,74 @@
         </div>
       </div>
     </footer>
+    <h2>What our supporters say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h3>"I love this company, girl power!"<br><span>Amina Amin, Vice President</span></h3>
+        </div>
+        <div class="item">
+          <h3>"Yes to diversity!"<br><span>David Jackson, Doctor </span></h3>
+        </div>
+        <div class="item">
+          <h3>"I couldn't be happier with what this company stands for?"<br><span>Shaleem Jacob, Actor</span></h3>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+    <script>
+      $(document).ready(function() {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function() {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+        $(window).scroll(function() {
+          $(".slideanim").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      })
+    </script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>
